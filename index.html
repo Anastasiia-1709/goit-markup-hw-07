@@ -23,29 +23,41 @@
     <header style="border-bottom: 1px solid #e7e9fc">
       <div class="container header">
         <nav class="site-nav">
-          <a href="./index.html" class="logo"><span>WEB</span>STUDIO</a>
-          <ul class="list nav">
-            <li class="item">
-              <a href="./index.html" class="link-nav current">Studio</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link-nav">Portfolio</a>
-            </li>
-            <li class="item"><a href="" class="link-nav">Contacts</a></li>
-          </ul>
+          <div class="menu">
+            <a href="./index.html" class="logo"><span>WEB</span>STUDIO</a>
+            <button class="menu-button is-open" type="button"  data-menu-button
+            aria-expanded="false">
+              <svg width="32px" height="22px">
+                <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                <use class="icon-cross" href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            
+            </button>
+          </div>
         </nav>
-        <ul class="list cont">
-          <li class="contact">
-            <a href="mailto:info@devstudio.com" class="contacts"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact">
-            <a href="tel:+11(000)111-11-11" class="contacts"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
+        <div class="menu-container">
+          <ul class="list nav">
+              <li class="item">
+                <a href="./index.html" class="link-nav current">Studio</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link-nav">Portfolio</a>
+              </li>
+              <li class="item"><a href="" class="link-nav">Contacts</a></li>
+            </ul>
+          <ul class="list cont">
+            <li class="contact">
+              <a href="mailto:info@devstudio.com" class="contacts"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact">
+              <a href="tel:+11(000)111-11-11" class="contacts"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--Main-->
@@ -496,5 +508,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
