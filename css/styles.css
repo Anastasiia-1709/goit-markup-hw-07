@@ -598,6 +598,11 @@ img {
 .submit-button:focus {
   background-color: var(--active-color);
 }
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .submit-input {
   width: 398px;
@@ -1093,6 +1098,7 @@ textarea:focus,
   .submit-input {
     width: 264px;
     margin-right: 24px;
+    margin-bottom: 0;
   }
   .submit-button {
     margin: 0;
@@ -1107,6 +1113,14 @@ textarea:focus,
   .footer-row {
     display: flex;
     /* justify-content: center; */
+  }
+  .footer-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 486px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .footer-row .footer-box:not(:last-child) {
@@ -1153,6 +1167,13 @@ textarea:focus,
     display: block;
   }
   .customers {
+    flex-wrap: nowrap;
+  }
+  .footer-container {
+    width: 1158px;
+    padding-left: 16px;
+    padding-right: 16px;
+
     flex-wrap: nowrap;
   }
   .footer-flex {
