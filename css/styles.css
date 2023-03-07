@@ -42,8 +42,8 @@ body {
 } */
 
 /* Positioning */
-
-/* .container {
+/* 
+.container {
   max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
@@ -978,6 +978,7 @@ textarea:focus,
 
 /* Adaptive */
 .container {
+  width: 428px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -985,9 +986,9 @@ textarea:focus,
 }
 
 @media screen and (min-width: 428px) {
-  .container {
+  /* .container {
     width: 428px;
-  }
+  } */
 
   /* .feature-box {
     display: none;
