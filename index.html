@@ -23,19 +23,22 @@
     <header style="border-bottom: 1px solid #e7e9fc">
       <div class="container header">
         <nav class="site-nav">
-          <div class="menu">
-            <a href="./index.html" class="logo"><span>WEB</span>STUDIO</a>
-            <button class="menu-button is-open" type="button"  data-menu-button
-            aria-expanded="false">
-              <svg width="32px" height="22px">
-                <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
-                <use class="icon-cross" href="./images/symbol-defs.svg#icon-close"></use>
+          <div class="menu" >
+           <a href="./index.html" class="logo"><span>WEB</span>STUDIO</a>
+            <button 
+            class="menu-button " 
+            type="button"  data-menu-button 
+            aria-expanded="false" 
+            aria-controls="menu-container">
+              <svg width="32px" height="24px" aria-label="switcher of mobile menu">
+                <use class="icon-menu" href="./images/symbol-defs-menu.svg#icon-menu"></use>
+                <use class="icon-cross" href="./images/symbol-defs-close.svg#icon-close-2"></use>
               </svg>
             
             </button>
           </div>
         </nav>
-        <div class="menu-container">
+        <div class="menu-container" id="menu-container" data-menu>
           <ul class="list nav">
               <li class="item">
                 <a href="./index.html" class="link-nav current">Studio</a>
@@ -45,19 +48,63 @@
               </li>
               <li class="item"><a href="" class="link-nav">Contacts</a></li>
             </ul>
-          <ul class="list cont">
+          <ul class="list cont-mobile">
             <li class="contact">
-              <a href="mailto:info@devstudio.com" class="contacts"
+              <a href="tel:+11(000)111-11-11" class="contacts tel"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="contact">
+              <a href="mailto:info@devstudio.com" class="contacts email"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list header-media">
+                  <li class="header-media-item">
+                    <a href="" aria-label="Instagram" class="header-social-media-link">
+                      <svg class="header-social-media-icon">
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="header-media-item">
+                    <a href="" aria-label="Twitter" class="header-social-media-link">
+                      <svg class="header-social-media-icon">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="header-media-item">
+                    <a href="" aria-label="Facebook" class="header-social-media-link">
+                      <svg class="header-social-media-icon">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="header-media-item">
+                    <a href="" aria-label="LinkedIn" class="header-social-media-link">
+                      <svg class="header-social-media-icon">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+        </div>
+        <ul class="list cont">
+            <li class="contact">
+              <a href="mailto:info@devstudio.com" class="contacts email"
                 >info@devstudio.com</a
               >
             </li>
             <li class="contact">
-              <a href="tel:+11(000)111-11-11" class="contacts"
+              <a href="tel:+11(000)111-11-11" class="contacts tel"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
-        </div>
       </div>
     </header>
     <!--Main-->
