@@ -769,6 +769,7 @@ img {
 
   opacity: 1;
   transition: opacity 250ms var(--cubic);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -782,19 +783,18 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 96px;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -96px) scale(1);
   transition: transform 250ms var(--cubic);
-
-  width: 408px;
+  width: 392px;
   height: 576px;
   background-color: var(--modal-bg);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%),
+    0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 4px;
-
   padding: 72px 24px 24px;
+  margin-top: 96px;
 }
 
 .close-button {
@@ -828,7 +828,7 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  /* padding: 72px 24px 16px 24px; */
+
   margin-bottom: 16px;
 }
 
@@ -884,7 +884,7 @@ img {
 
 textarea {
   resize: none;
-  width: 360px;
+  max-width: 360px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1011,7 +1011,7 @@ textarea:focus,
 }
 
 .menu-container {
-  z-index: 1;
+  /* z-index: 1; */
   /* display: none; */
   /* position: absolute;
   top: 100%;
@@ -1341,6 +1341,9 @@ textarea:focus,
     background-color: var(--active-color);
     border-radius: 2px;
   }
+  .modal {
+    width: 408px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .cards {
@@ -1444,6 +1447,20 @@ textarea:focus,
   .cont .contact:not(:last-child) {
     margin-bottom: 0;
     margin-right: 40px;
+  }
+  .modal {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -80px) scale(1);
+    transition: transform 250ms var(--cubic);
+    height: 576px;
+    background-color: var(--modal-bg);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%),
+      0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    padding: 72px 24px 24px;
+    margin-top: 80px;
   }
 }
 
