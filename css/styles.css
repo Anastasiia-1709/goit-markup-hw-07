@@ -204,10 +204,10 @@ img {
 /* Hero */
 .hero {
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   max-width: 1440px;
-  height: 600px;
+  height: 432px;
   margin-left: auto;
   margin-right: auto;
 
@@ -1034,9 +1034,9 @@ textarea:focus,
 .menu-container.is-open {
   display: block;
 }
-.header {
+/* .header {
   position: relative;
-}
+} */
 /* .link-nav {
   position: relative;
 
@@ -1143,15 +1143,20 @@ textarea:focus,
   .cards .item:not(:last-child) {
     margin-bottom: 72px;
   }
+
   .menu-container {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     top: 100%;
     left: 0;
-    width: 100%;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    /* height: 100vh; */
     background-color: #ffffff;
-    padding-left: 40px;
-    padding-right: auto;
+    background-size: cover;
+    padding: 80px 35px 40px 40px;
   }
   .link-nav {
     position: relative;
@@ -1234,6 +1239,7 @@ textarea:focus,
 
 @media screen and (min-width: 768px) {
   .hero {
+    height: 436px;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -1397,7 +1403,7 @@ textarea:focus,
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1158px;
   }
@@ -1407,6 +1413,9 @@ textarea:focus,
   }
 
   .hero {
+    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
